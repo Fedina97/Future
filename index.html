@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./img/favicon.ico" />
+
+    <link rel="stylesheet" href="main-styles.css" />
+    <title>FurniCity</title>
+  </head>
+  <body>
+    <header class="header-page">
+      <div class="header-page__container">
+        <h2 class="header-page__logo">FurniCity</h2>
+        <nav class="header-page__menu" aria-label="Главное меню">
+          <ul class="header-page__menu-list">
+            <li class="header-page__menu-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="header-page__menu-item">
+              <a href="#features" class="nav-link">Features</a>
+            </li>
+            <li class="header-page__menu-item">
+              <a href="#furniture" class="nav-link">furniture</a>
+            </li>
+            <li class="header-page__menu-item">
+              <a href="#feedback" class="nav-link">Feedback</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-button" id="themeToggle" area-label="Сменить тему">
+          <button>Темная тема</button>
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      <section id="features" class="container features">
+        <div class="feature-item">
+          <span
+            ><img
+              width="50"
+              height="50"
+              src="https://img.icons8.com/ios/50/free-shipping.png"
+              alt="free-shipping"
+          /></span>
+          <h3 class="feature-title">Free delivery</h3>
+        </div>
+        <div class="feature-item">
+          <span
+            ><img
+              width="50"
+              height="50"
+              src="https://img.icons8.com/ios/50/online-support--v1.png"
+              alt="online-support--v1"
+          /></span>
+          <h3 class="feature-title">Support 24/7</h3>
+        </div>
+        <div class="feature-item">
+          <span
+            ><img
+              width="50"
+              height="50"
+              src="https://img.icons8.com/ios/50/guarantee--v1.png"
+              alt="guarantee--v1"
+          /></span>
+          <h3 class="feature-title">Return garanties</h3>
+        </div>
+        <div class="feature-item">
+          <span
+            ><img
+              width="50"
+              height="50"
+              src="https://img.icons8.com/ios/50/coins--v1.png"
+              alt="coins--v1"
+          /></span>
+          <h3 class="feature-title">Loyalty system</h3>
+        </div>
+        <div class="feature-item">
+          <span
+            ><img
+              width="50"
+              height="50"
+              src="https://img.icons8.com/ios/50/good-quality--v1.png"
+              alt="good-quality--v1"
+          /></span>
+          <h3 class="feature-title">High quality</h3>
+        </div>
+        <div class="feature-item">
+          <span
+            ><img
+              width="50"
+              height="50"
+              src="https://img.icons8.com/ios/50/recycle-sign.png"
+              alt="recycle-sign"
+          /></span>
+          <h3>Recycling old</h3>
+        </div>
+      </section>
+      <section id="furniture" class="furniture-section">
+        <h2 class="furniture-section__title">Топ продаж</h2>
+        <div class="furniture-grid container" id="furnitureGrid"></div>
+        <div class="btn-container" id="btnContainer">
+          <button class="load-more-btn" id="loadMoreBtn">Показать еще</button>
+        </div>
+      </section>
+      <section id="feedback">
+        <h2 class="section-title">Обратная связь</h2>
+        <div class="feedback-form">
+          <form id="feedbackForm" novalidate>
+            <div class="form-group" id="nameGroup">
+              <label for="name">Имя *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Введите ваше имя"
+              />
+              <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group" id="emailGroup">
+              <label for="email">Email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@mail.ru"
+              />
+              <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group" id="messageGroup">
+              <label for="message">Сообщение *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="3"
+                placeholder="Поделитесь впечатлениями о покупке..."
+              ></textarea>
+              <span class="error-message" id="messageError"></span>
+            </div>
+            <button class="submit-btn" type="submit" id="submitBtn">
+              Отправить
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <p>© 2026 FurniCity. Все права защищены.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="formValidation.js"></script>
+  </body>
+</html>
